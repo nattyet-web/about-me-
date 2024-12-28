@@ -1,60 +1,84 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #1b1b2f;
+  color: #ececec;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  color: #333;
+  line-height: 1.6;
 }
 
-section {
-  padding: 50px;
+header, section {
+  padding: 50px 20px;
   text-align: center;
 }
 
 h1, h2 {
-  color: #0056b3; /* Barca's blue */
+  color: #f1c40f; /* Golden for highlights */
 }
 
-.socials a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #ff0000; /* Barca's red */
-}
-
-.socials a:hover {
-  text-decoration: underline;
+p {
+  max-width: 600px;
+  margin: 10px auto;
+  color: #dcdde1;
 }
 
 /* Welcome Section */
 #welcome {
-  background: linear-gradient(to right, #0056b3, #ff0000);
-  color: #fff;
+  background: #121212;
+  color: #dcdde1;
   padding: 100px 20px;
-  animation: fadeIn 2s ease-in-out;
 }
 
 #welcome h1 {
   font-size: 3rem;
 }
 
-/* Favorite Music */
-.genre {
-  margin: 20px 0;
+/* About Section */
+.socials {
+  margin-top: 20px;
 }
 
-/* Hobbies Section */
-#hobbies ul {
-  list-style-type: none;
-  padding: 0;
+.socials a {
+  color: #1abc9c;
+  font-size: 2rem;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.socials a:hover {
+  color: #e74c3c; /* Highlight on hover */
+}
+
+/* Favorite Music Section */
+#music {
+  background: #181818;
+}
+
+.genres {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.genre-card {
+  background: #2c2c3e;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  text-align: center;
+}
+
+.genre-card h3 {
+  color: #e74c3c;
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  padding: 20px 0;
+  text-align: center;
+  color: #7f8c8d;
 }
