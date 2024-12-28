@@ -14,7 +14,7 @@ header, section {
 }
 
 h1, h2 {
-  color: #f1c40f; /* Golden for highlights */
+  color: #f1c40f;
 }
 
 p {
@@ -26,7 +26,6 @@ p {
 /* Welcome Section */
 #welcome {
   background: #121212;
-  color: #dcdde1;
   padding: 100px 20px;
 }
 
@@ -34,27 +33,12 @@ p {
   font-size: 3rem;
 }
 
-/* About Section */
-.socials {
-  margin-top: 20px;
+#welcome p {
+  font-style: italic;
+  color: #a1a1a1;
 }
 
-.socials a {
-  color: #1abc9c;
-  font-size: 2rem;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.socials a:hover {
-  color: #e74c3c; /* Highlight on hover */
-}
-
-/* Favorite Music Section */
-#music {
-  background: #181818;
-}
-
+/* Card Styles */
 .genres {
   display: flex;
   justify-content: center;
@@ -75,10 +59,20 @@ p {
   color: #e74c3c;
 }
 
-/* Footer */
-footer {
-  background: #121212;
-  padding: 20px 0;
-  text-align: center;
-  color: #7f8c8d;
+.genre-card img.poster {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Socials */
+.socials a {
+  color: #1abc9c;
+  font-size: 2rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: #e74c3c;
 }
