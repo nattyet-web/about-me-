@@ -1,84 +1,9 @@
-/* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1b1b2f;
-  color: #ececec;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-header, section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #f1c40f; /* Golden for highlights */
-}
-
-p {
-  max-width: 600px;
-  margin: 10px auto;
-  color: #dcdde1;
-}
-
-/* Welcome Section */
-#welcome {
-  background: #121212;
-  color: #dcdde1;
-  padding: 100px 20px;
-}
-
-#welcome h1 {
-  font-size: 3rem;
-}
-
-/* About Section */
-.socials {
-  margin-top: 20px;
-}
-
-.socials a {
-  color: #1abc9c;
-  font-size: 2rem;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.socials a:hover {
-  color: #e74c3c; /* Highlight on hover */
-}
-
-/* Favorite Music Section */
-#music {
-  background: #181818;
-}
-
-.genres {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.genre-card {
-  background: #2c2c3e;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  width: 200px;
-  text-align: center;
-}
-
-.genre-card h3 {
-  color: #e74c3c;
-}
-
-/* Footer */
-footer {
-  background: #121212;
-  padding: 20px 0;
-  text-align: center;
-  color: #7f8c8d;
-}
+// Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
