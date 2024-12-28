@@ -77,5 +77,8 @@ p {
   color: #e74c3c;
 }
 footer{
-   background-color: #1b1b2f;
+   background-color: #black;
+}
+p.footer{
+  color: white;
 }
